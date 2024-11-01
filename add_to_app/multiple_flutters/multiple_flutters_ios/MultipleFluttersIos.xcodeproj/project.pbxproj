@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 51;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,8 +16,31 @@
 		0D61B20125BB8FDF00A1A590 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D61B20025BB8FDF00A1A590 /* DataModel.swift */; };
 		0D61B20825BBEA9E00A1A590 /* SingleFlutterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D61B20725BBEA9E00A1A590 /* SingleFlutterViewController.swift */; };
 		0D61B20B25BBF88700A1A590 /* DoubleFlutterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D61B20A25BBF88700A1A590 /* DoubleFlutterViewController.swift */; };
+		BD7C267D2CD531FC00061728 /* App.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7C26752CD5302400061728 /* App.xcframework */; };
+		BD7C267E2CD531FC00061728 /* App.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD7C26752CD5302400061728 /* App.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD7C26802CD531FD00061728 /* Flutter.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7C26782CD5302400061728 /* Flutter.xcframework */; };
+		BD7C26812CD531FD00061728 /* Flutter.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD7C26782CD5302400061728 /* Flutter.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BD7C26822CD5320000061728 /* FlutterPluginRegistrant.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7C26762CD5302400061728 /* FlutterPluginRegistrant.xcframework */; };
+		BD7C26882CD5338700061728 /* url_launcher_ios.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = BD7C26772CD5302400061728 /* url_launcher_ios.xcframework */; };
+		BD7C26892CD5338700061728 /* url_launcher_ios.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BD7C26772CD5302400061728 /* url_launcher_ios.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		DA84F1C17CFA00606F7B401C /* Pods_MultipleFluttersIos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E03DC90CED28B2143B2CFB1 /* Pods_MultipleFluttersIos.framework */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BD7C267F2CD531FC00061728 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BD7C26892CD5338700061728 /* url_launcher_ios.xcframework in Embed Frameworks */,
+				BD7C26812CD531FD00061728 /* Flutter.xcframework in Embed Frameworks */,
+				BD7C267E2CD531FC00061728 /* App.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0D61B1DE25BB8A2300A1A590 /* MultipleFluttersIos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultipleFluttersIos.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -34,6 +57,10 @@
 		4E03DC90CED28B2143B2CFB1 /* Pods_MultipleFluttersIos.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MultipleFluttersIos.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F02FEA4EA8C75406BC5FFC5 /* Pods-MultipleFluttersIos.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultipleFluttersIos.release.xcconfig"; path = "Target Support Files/Pods-MultipleFluttersIos/Pods-MultipleFluttersIos.release.xcconfig"; sourceTree = "<group>"; };
 		5EE6997543EAE7F85C674231 /* Pods-MultipleFluttersIos.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MultipleFluttersIos.debug.xcconfig"; path = "Target Support Files/Pods-MultipleFluttersIos/Pods-MultipleFluttersIos.debug.xcconfig"; sourceTree = "<group>"; };
+		BD7C26752CD5302400061728 /* App.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = App.xcframework; path = "../multiple_flutters_module/build/ios/framework/$(CONFIGURATION)/App.xcframework"; sourceTree = "<group>"; };
+		BD7C26762CD5302400061728 /* FlutterPluginRegistrant.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = FlutterPluginRegistrant.xcframework; path = "../multiple_flutters_module/build/ios/framework/$(CONFIGURATION)/FlutterPluginRegistrant.xcframework"; sourceTree = "<group>"; };
+		BD7C26772CD5302400061728 /* url_launcher_ios.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = url_launcher_ios.xcframework; path = "../multiple_flutters_module/build/ios/framework/$(CONFIGURATION)/url_launcher_ios.xcframework"; sourceTree = "<group>"; };
+		BD7C26782CD5302400061728 /* Flutter.xcframework */ = {isa = PBXFileReference; expectedSignature = "AppleDeveloperProgram:S8QB4VV633:FLUTTER.IO LLC"; lastKnownFileType = wrapper.xcframework; name = Flutter.xcframework; path = "../multiple_flutters_module/build/ios/framework/$(CONFIGURATION)/Flutter.xcframework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,7 +68,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD7C26802CD531FD00061728 /* Flutter.xcframework in Frameworks */,
+				BD7C267D2CD531FC00061728 /* App.xcframework in Frameworks */,
+				BD7C26822CD5320000061728 /* FlutterPluginRegistrant.xcframework in Frameworks */,
 				DA84F1C17CFA00606F7B401C /* Pods_MultipleFluttersIos.framework in Frameworks */,
+				BD7C26882CD5338700061728 /* url_launcher_ios.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +126,10 @@
 		A2F4F0BD46437369E87BA62F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BD7C26752CD5302400061728 /* App.xcframework */,
+				BD7C26782CD5302400061728 /* Flutter.xcframework */,
+				BD7C26762CD5302400061728 /* FlutterPluginRegistrant.xcframework */,
+				BD7C26772CD5302400061728 /* url_launcher_ios.xcframework */,
 				4E03DC90CED28B2143B2CFB1 /* Pods_MultipleFluttersIos.framework */,
 			);
 			name = Frameworks;
@@ -108,11 +143,10 @@
 			buildConfigurationList = 0D61B1F225BB8A2400A1A590 /* Build configuration list for PBXNativeTarget "MultipleFluttersIos" */;
 			buildPhases = (
 				3BC074A3AF94322EF6E73F8B /* [CP] Check Pods Manifest.lock */,
-				9A714FC9CCEF3D4EFCAF0E2F /* [CP-User] Run Flutter Build multiple_flutters_module Script */,
 				0D61B1DA25BB8A2300A1A590 /* Sources */,
 				0D61B1DB25BB8A2300A1A590 /* Frameworks */,
 				0D61B1DC25BB8A2300A1A590 /* Resources */,
-				D93C82A75960A3ABB9D69453 /* [CP] Embed Pods Frameworks */,
+				BD7C267F2CD531FC00061728 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -191,33 +225,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		9A714FC9CCEF3D4EFCAF0E2F /* [CP-User] Run Flutter Build multiple_flutters_module Script */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			name = "[CP-User] Run Flutter Build multiple_flutters_module Script";
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\nset -u\nsource \"${SRCROOT}/../multiple_flutters_module/.ios/Flutter/flutter_export_environment.sh\"\nexport VERBOSE_SCRIPT_LOGGING=1 && \"$FLUTTER_ROOT\"/packages/flutter_tools/bin/xcode_backend.sh build";
-		};
-		D93C82A75960A3ABB9D69453 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MultipleFluttersIos/Pods-MultipleFluttersIos-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MultipleFluttersIos/Pods-MultipleFluttersIos-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MultipleFluttersIos/Pods-MultipleFluttersIos-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -293,6 +300,10 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Flutter/$(CONFIGURATION)/",
+					"$(inherited)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -354,6 +365,10 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Flutter/$(CONFIGURATION)/",
+					"$(inherited)",
+				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -379,12 +394,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 537N8QGVUB;
 				INFOPLIST_FILE = MultipleFluttersIos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.flutter.MultipleFluttersIos;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.renefloor.MultipleFluttersIos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -398,12 +414,13 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 537N8QGVUB;
 				INFOPLIST_FILE = MultipleFluttersIos/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = dev.flutter.MultipleFluttersIos;
+				PRODUCT_BUNDLE_IDENTIFIER = nl.renefloor.MultipleFluttersIos;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
